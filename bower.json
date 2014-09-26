@@ -16,13 +16,11 @@
   "dependencies": {
     "jquery": "~1.9",
     "underscore": "~1.5.2",
-    "backbone": "~1.1.0",
-    "ractive": "~0.3.7",
-    "ractive-backbone": "~0.1.0",
-    "ractive-events-tap": "~0.1.0",
     "unsemantic": "*",
     "requirejs": "~2.1.9",
-    "text": "~2.0.10"
+    "text": "~2.0.10",
+    "d3": "~3.2.8",
+    "topojson": "~1.4.6",
+    "simple-map-d3": "~0.1.5"
   }
 }
-

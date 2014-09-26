@@ -13,12 +13,14 @@ require.config({
     },
     'Highcharts': {
       exports: 'Highcharts',
-      'deps': [ 'jquery']
+      deps: [ 'jquery']
     },
-    // Mapbox and requireJS don't really work, so we just let
-    // the L be global
-    'mapbox': {
-      exports: 'mapbox'
+    'd3': {
+      exports: 'd3'
+    },
+    'simple-map-d3': {
+      exports: 'SimpleMapD3',
+      deps: ['d3']
     }
   },
   baseUrl: 'js',
@@ -27,8 +29,9 @@ require.config({
     'text': '../bower_components/text/text',
     'jquery': '../bower_components/jquery/jquery.min',
     'underscore': '../bower_components/underscore/underscore-min',
-    'Ractive': '../bower_components/ractive/build/Ractive-legacy.min',
-    'Ractive-events-tap': '../bower_components/ractive-events-tap/Ractive-events-tap.min',
+    'topojson': '../bower_components/topojson/topojson',
+    'd3': '../bower_components/d3/d3',
+    'simple-map-d3': '../bower_components/simple-map-d3/dist/simple-map-d3.src',
     'minnpost-minimum-wage-map': 'app'
   }
 });

@@ -1,12 +1,10 @@
-<div class="message-container"></div>
+<div class="message-container">
+  <% if (noData) { %>
+    <%= loading %>
+  <% } %>
+</div>
 
 <div class="content-container">
-
-  <h3>Minnpost Minimum Wage Map</h3>
-
-  {{#noData}}
-    {{>loading}}
-  {{/noData}}
 
   <div class="minimum-wage-map-container"></div>
 
